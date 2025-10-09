@@ -1,21 +1,147 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 96px;
+    padding-top: 92px;
+    height: 293px;
 }
-
-body {
-    
+.nav {
+    justify-self: start;
+    max-width: 392px;
+    margin-right: 37px;
 }
 
 .nav_list {
- 
+    display: flex;
+    grid-template-columns: 1fr min-content 1fr;
+    list-style: circle;
+    gap: 28px;
+}
+
+.nav_item-glav {
+    list-style:none;
+}
+
+.nav_item {
+    white-space: nowrap;
+    text-decoration-line: underline;
+}
+
+.logo {
+    justify-self: center;
 }
 
 .logo_image {
-    
+    width: 148px;
+    height: 105px;
 }
 
 .address {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3; 
+    justify-self: end;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 240px;
+    margin-left: 180px;    
+
+}
+
+.address_text {
+    text-decoration-line: none;
+}
+
+.address_email {
+     
+}
+
+.address_phone {
     
+}
+
+/* Cover section */
+.cover {
+}
+
+.cover_title {
+}
+
+.description {
+}
+
+.description_text {
+}
+
+.description_button {
+}
+
+/* Lots section */
+.lots {
+}
+
+.lots_list {
+}
+
+.lots_item {
+}
+
+.lot_link {
+}
+
+.lot_image {
+}
+
+.lot_title {
+}
+
+.lot_description {
+}
+
+.lots_about {
+}
+
+/* About section */
+.about {
+}
+
+.about_columns_image {
+}
+
+.about_columns {
+}
+
+.about_title {
+}
+
+.about_paragraphs {
+}
+
+.about_paragraphs-item {
+}
+
+/* Footer */
+.footer_nav {
+}
+
+.footer_nav-list {
+}
+
+.footer_nav-item {
+}
+
+.footer_nav-link {
+}
+
+.social {
+}
+
+.social_item {
+}
+
+.social_icon {
 }
