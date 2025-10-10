@@ -103,7 +103,7 @@
     align-items: center;
 } 
 
-.cover_overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -193,28 +193,149 @@
 }
 
 /* Lots section */
+
+
 .lots {
+    padding: 180px 24px 120px;
+    margin: 0 auto
 }
 
-.lots_list {
+.lots__heading {
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 27px;
 }
 
-.lots_item {
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
 }
 
-.lot_link {
+/* Элемент списка с шириной и минимальной высотой */
+.lots__card-list-item {
+    width: 334px;
+    min-height: 596px;
+    flex-grow: 0;
 }
 
-.lot_image {
+/* Ссылка и карточка на всю высоту */
+.card-link {
+    display: block;
+    width: 334px;
+    min-height: 100%;
+    text-decoration: none;
 }
 
-.lot_title {
+.card {
+    position: relative;
+    width: 334px;
+    height: 596px;
+    padding-top: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
-.lot_description {
+
+/* Классы для фона карточек (не дублируют общие правила) */
+.card_type_film {
+    background-image: url("../images/card-lot-01.jpg");
 }
 
-.lots_about {
+.card_type_book {
+    background-image: url("../images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+    background-image: url("../images/card-lot-03.jpg");
+}
+
+
+.card__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
+    margin-top: -48px;
+}
+
+.card_type_film .card__title {
+    margin-bottom: 274px;
+
+}
+
+/* Карточка с книгой */
+.card_type_book .card__title {
+    margin-bottom: 30px;
+
+}
+
+/* Карточка с картиной */
+.card_type_picture .card__title {
+    margin-bottom: 126px;
+
+}
+
+.card__text {
+    font-size: 20px;
+    font-weight: 400;
+    width: 254px;
+    line-height: 1.2;
+    color: white;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 48px;
+    margin-left: 40px;
+    overflow: hidden;
+    display: block;
+}
+
+.card_type_film .card__text {
+    height: 144px;
+
+}
+
+/* Карточка с книгой */
+.card_type_book .card__text {
+    height: 360px;
+    justify-content: center;
+
+}
+
+/* Карточка с картиной */
+.card_type_picture .card__text {
+    height: 264px;
+
+}
+
+
+.lots__look-more-link {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration:underline;
+    color: #000;
+    padding-left: 40px;
+    display: block;
+    margin-top: 30px;
 }
 
 /* About section */
