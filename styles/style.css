@@ -79,12 +79,12 @@
     font-size: 18px;
 }
 
-.address_email {
+.address__email {
     font-size: 18px;
      
 }
 
-.address_phone {
+.address__phone {
     font-size: 18px;
     
 }
@@ -339,12 +339,12 @@
 }
 
 /* About section */
+
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
-    gap: -72px;
-    padding: 120px 24px 180px 24px;
-    
+    padding: 50px 24px 180px 24px;
+    gap: 65px;
 }
 
 .about__column--logo {
@@ -359,6 +359,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 47px;
 }
 
 .about__logo-image {
@@ -396,23 +397,75 @@
 
 
 /* Footer */
-.footer_nav {
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
+    gap: 154px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.footer_nav-list {
+.footer .address {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    grid-column: 1;
+    margin: 0;
 }
 
-.footer_nav-item {
+/* Навигационное меню */
+.footer__menu {
+    grid-column: 2;
+    margin: 0;
+    margin-bottom: 115px;
 }
 
-.footer_nav-link {
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
 }
 
-.social {
+.footer__menu-list-item {
+
 }
 
-.social_item {
+.footer__menu-link {
+
 }
 
-.social_icon {
+.footer__menu-link_active {
+    text-decoration: none; /* Без подчёркивания для активной ссылки */
+}
+
+/* Социальные сети */
+.footer__social-list {
+    grid-column: 3;
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-self: end; 
+    margin-right: 50px;
+    align-self: start
+}
+
+.footer__social-list-item {
+    margin: 0;
+}
+
+.footer__social-link {
+    display: block;
+}
+
+.footer__social-icon {
+    height: 48px;
+    width: 48px;
 }
