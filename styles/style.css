@@ -340,22 +340,60 @@
 
 /* About section */
 .about {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    gap: -72px;
+    padding: 120px 24px 180px 24px;
+    
 }
 
-.about_columns_image {
+.about__column--logo {
+    position: relative;
 }
 
-.about_columns {
+.about__logo {
+    width: 240px; 
+    height: 240px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about_title {
+.about__logo-image {
+    width: 148px;
+    height: 114px;
 }
 
-.about_paragraphs {
+.about__column--text {
+    padding-top: 100px;
 }
 
-.about_paragraphs-item {
+.about__title {
+    margin-bottom: 100px;
+    align-content: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
 }
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 693px;
+    max-height: 312px;
+    gap: 25px;
+
+}
+
+.about__paragraph {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
 
 /* Footer */
 .footer_nav {
