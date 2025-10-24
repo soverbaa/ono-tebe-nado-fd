@@ -6,11 +6,14 @@
     max-width: 1100px;
     margin: 0 auto;
     position: relative;
+    height: 293px;
+    box-sizing: border-box;
 }
 
 .nav {
-    grid-column: 1;
     justify-self: start;
+    padding-top: 38px;
+    padding-bottom: 42px;
 }
 
 .nav_list {
@@ -30,8 +33,6 @@
 }
 
 .logo {
-    grid-column: 2;
-    grid-row: 1;
 }
 
 .logo_image {
@@ -40,32 +41,38 @@
 }
 
 .address {
+    display: flex;
+    flex-direction: column;
     grid-column: 3;
-    justify-self: end;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 184px;
+    grid-row: 1;
+    margin-top: 3px;
     font-size: 18px;
-    font-style: normal;
-    max-width: 240px;
+    width: 240px;
+    height: 98px;
 }
 
 .address_text {
     text-decoration-line: none;
     font-size: 18px;
+    line-height: 24.3px;
+    font-weight: 400;
 }
 
 .address__email {
     font-size: 18px;
-     
 }
 
 .address__phone {
     font-size: 18px;
-    
 }
 
 .cover {
     position: relative;
     background-image: url('../images/cover.jpg');
-    min-height: 757px;
+    height: 757px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,12 +94,17 @@
     position: relative;
     color: white;
     z-index: 2;
+    font-family: 'Raleway', Arial, sans-serif;
     font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 165px 50px 0;
-    max-width: 1100px;
-    margin: 0 auto;
+    display: flex;
+    letter-spacing: 0.3em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    padding-top: 165px;
 }
 
 .cover__title-line {
@@ -101,20 +113,18 @@
 
 .cover__title-left {
     align-self: flex-start;
-    letter-spacing: 0.3em;
     margin-left: 50px;
-    margin-right: 44.5px;
 }
 
 .cover__title-center {
     align-self: center;
-    letter-spacing: 0.3em;
-    margin-left: 60px;
+    line-height: 114.99999999999999%;
+    margin-left: 35px;
 }
 
 .cover__title-right {
     align-self: flex-end;
-    letter-spacing: 0.3em;
+    margin-right: 19px;
 }
 
 .description {
@@ -128,24 +138,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    gap: 50px;
     flex-wrap: nowrap;
-    padding-top: 106px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 97px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .description_text {
-    letter-spacing: 90%;
-    word-spacing: 14px;
-    margin: 0;
+    word-spacing: 21px;
     white-space: nowrap;
+    line-height: 28px;
 }
 
 .description_button {
-    margin-left: 107px;
+    margin-left: 95px;
     color: white;
     font-size: 22px;
     font-weight: 400;
@@ -158,9 +165,11 @@
 }
 
 .lots {
-    padding: 180px 50px 120px;
-    max-width: 1100px;
+    padding: 180px 24px 124px 24px;
+    max-width: 1052px;
     margin: 0 auto;
+    height: 723px;
+    box-sizing: border-box;
 }
 
 .lots__heading {
@@ -169,13 +178,13 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 27px;
+    margin-left:16px;
 }
 
 .lots__card-list {
     display: flex;
     gap: 25px;
     list-style: none;
-    flex-wrap: wrap; 
     justify-content: center;
 }
 
@@ -234,17 +243,14 @@
 
 .card_type_film .card__title {
     margin-bottom: 274px;
-
 }
 
 .card_type_book .card__title {
     margin-bottom: 30px;
-
 }
 
 .card_type_picture .card__title {
     margin-bottom: 126px;
-
 }
 
 .card__text {
@@ -263,18 +269,15 @@
 
 .card_type_film .card__text {
     height: 144px;
-
 }
 
 .card_type_book .card__text {
     height: 360px;
     justify-content: center;
-
 }
 
 .card_type_picture .card__text {
     height: 264px;
-
 }
 
 .lots__look-more-link {
@@ -282,18 +285,21 @@
     font-weight: 400;
     text-decoration:underline;
     color: #000;
-    padding-left: 40px;
+    margin-left: 40px;
     display: block;
     margin-top: 30px;
+    margin-left: 16px;
 }
 
 .about {
     display: grid;
     grid-template-columns: minmax(334px, auto) 1fr;
     gap: 25px;
-    padding: 120px 50px;
-    max-width: 1100px;
+    padding: 335px 0px;
+    max-width: 1052px;
     margin: 0 auto;
+    height: 595px;
+    box-sizing: border-box;
 }
 
 .about__column--logo {
@@ -346,9 +352,11 @@
     grid-template-columns: 1fr auto 1fr;
     align-items: start;
     gap: 50px;
-    padding: 180px 50px 90px;
+    padding:406px 50px 90px;
     max-width: 1100px;
     margin: 0 auto;
+    height: 180px;
+    box-sizing: border-box;
 }
 
 .footer .address {
@@ -386,7 +394,6 @@
     margin: 0;
     padding: 0;
     justify-self: end;
-    margin-right: 50px;
     align-self: start
 }
 
@@ -402,3 +409,4 @@
     height: 48px;
     width: 48px;
 }
+
