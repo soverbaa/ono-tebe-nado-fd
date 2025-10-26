@@ -7,7 +7,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -17,7 +16,6 @@ body {
   font-family: Raleway, sans-serif;
   line-height: 1.2;
   font-size: 18px;
-  overflow-x: hidden;
 }
 
 h1,
