@@ -56,12 +56,12 @@
     font-size: 18px;
     width: 240px;
     font-style: normal;
+    line-height: 23.4px;
 }
 
 .address__text {
     text-decoration-line: none;
     font-size: 18px;
-    line-height: 24.3px;
     font-weight: 400;
 }
 
@@ -180,7 +180,7 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 27px;
-    margin-left: 16px;
+    margin-left: 40px;
 }
 
 .lots__card-list {
@@ -267,7 +267,7 @@
     color: #000;
     display: block;
     margin-top: 30px;
-    margin-left: 16px;
+    margin-left: 40px;
 }
 
 .about {
